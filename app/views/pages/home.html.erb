@@ -1,0 +1,11 @@
+<h1>Facebook groups</h1>
+
+<% @groups.each do |group| %>
+<h1><%= group.name %></h1>
+<br>
+<% group.users.each do |user| %>
+<%= user.name %>
+<br>
+<% end %>
+
+<% end %>
