@@ -3,9 +3,15 @@
 <% @groups.each do |group| %>
 <h1><%= group.name %></h1>
 <br>
+<strong>Group Users:</strong><br>
 <% group.users.each do |user| %>
 <%= user.name %>
 <br>
 <% end %>
+<% group.posts do |post| %>
+<h4><%= post.title %></h4>
 
-<% end %>
+
+ <% end %>
+
+  <% end %>
